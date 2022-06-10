@@ -25,9 +25,6 @@ import statmodels.api as sm
 
 from sklearn import preprocessing
 
-label_encoder = preprocessing.LabelEncoder()
-
-
 
 
 #Cell#2
@@ -111,7 +108,7 @@ df = df.join(ohe_df)
 #Cell#8
 #######################################################################
 
-#Finding statistical corelation between the variables using multiple regression analysis
+#Finding statistical correlation between the variables using multiple regression analysis
 #Ordinary least square function
 
 mod = sm.ols(formula='Label', data=df)
